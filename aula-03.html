@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Front-end</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h2>Front-end</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="html.html">HTML</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <aside>
+            <ul>
+                <li><a href="aula-01.html">Aula 01</a></li>
+                <li><a href="aula-02.html">Aula 02</a></li>
+                <li><a href="atividade-aula-02.html">Exercício - Aula 02</a></li>
+                <li><a href="aula-03.html">Aula 03</a></li>
+                <li><a href="atividade-aula-03.html">Exercício - Aula 03</a></li>
+            </ul>
+        </aside>
+        <main>
+            <div class="contents">
+                <h1>HTML - Aula 03: Imagens em HTML</h1>
+                <hr>
+                <h2>Introdução</h2>
+                <p>Nesta aula, vamos aprender como inserir e trabalhar com imagens em páginas web usando apenas HTML5,
+                    sem utilizar CSS. As imagens são elementos fundamentais para tornar um site visualmente atraente e
+                    informativo.</p>
+                <h2>Tag Básica para Imagens</h2>
+                <p>A tag <code>&lt;img&gt;</code> é usada para incorporar imagens em uma página HTML. É uma tag
+                    <em>self-closed</em>
+                    (não tem tag de fechamento), também conhecida como <em><strong>tag vazia</strong></em> que
+                    contém apenas atributos.
+                </p>
+                <pre>
+<code>&lt;img src="caminho/para/imagem.jpg" alt="Descrição da imagem"&gt;
+</code>
+</pre>
+                <h3>Atributos Principais:</h3>
+                <ol>
+                    <li><strong>src (source)</strong>: Especifica o caminho para a imagem</li>
+                    <li><strong>alt (texto alternativo)</strong>: Fornece um texto alternativo caso a imagem não possa
+                        ser exibida</li>
+                </ol>
+                <h2>Exemplo Básico</h2>
+                <pre>
+<code>&lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;Minha Página com Imagem&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;Bem-vindo ao Meu Site&lt;/h1&gt;
+            &lt;img src="natureza.jpg" alt="Paisagem de natureza com montanhas e rio"&gt;
+            &lt;p&gt;Aqui está uma bela imagem da natureza.&lt;/p&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+</code></pre>
+                <h2>Formatos de Imagem Suportados</h2>
+                <p>Os navegadores modernos suportam vários formatos:</p>
+                <dl>
+                    <dt>JPEG/JPG <span>(.jpg, .jpeg)</span></dt>
+                    <dd>
+                        O formato JPEG é ideal para fotografias e imagens com muitas cores, pois utiliza compactação com
+                        perda de qualidade (ajustável), reduzindo o tamanho do arquivo. No entanto, não suporta
+                        transparência, sendo o formato mais comum para fotos na web.
+                    </dd>
+                    <dt>PNG <span>(.png)</span></dt>
+                    <dd>
+                        O PNG é perfeito para gráficos, logos e imagens que precisam de transparência, pois suporta
+                        canal alpha (transparência com suavização). Ele utiliza compactação sem perda de qualidade, mas
+                        geralmente gera arquivos maiores que JPEG.
+                    </dd>
+                    <dt>GIF <span>(.gif)</span></dt>
+                    <dd>
+                        O GIF é usado principalmente para animações simples e gráficos com poucas cores, permitindo a
+                        criação de GIFs animados. Sua limitação é a paleta de apenas 256 cores, e ele oferece
+                        transparência básica (sem suavização).
+                    </dd>
+                    <dt>SVG <span>(.svg)</span></dt>
+                    <dd>
+                        O SVG é um formato vetorial, ideal para logos, ícones e ilustrações que precisam ser
+                        redimensionados sem perda de qualidade. Como é baseado em XML, pode ser editado como texto e é
+                        perfeito para designs responsivos.
+                    </dd>
+                    <dt>WebP <span>(.webp)</span></dt>
+                    <dd>
+                        Desenvolvido pelo Google, o WebP é uma alternativa moderna ao JPEG e PNG, oferecendo melhor
+                        compactação com qualidade equivalente. Ele suporta transparência (como PNG) e animação (como
+                        GIF), sendo uma ótima opção para otimização de desempenho.
+                    </dd>
+                    <dt>AVIF <span>(.avif)</span> <em>recente</em></dt>
+                    <dd>
+                        Baseado no codec AV1, o AVIF é excelente para imagens de alta qualidade com tamanho reduzido,
+                        suportando HDR e wide color gamut. É uma opção avançada para quem busca máxima eficiência sem
+                        sacrificar detalhes.
+                    </dd>
+                    <dt>APNG <span>(.apng)</span> <em>menos comum</em></dt>
+                    <dd>
+                        Uma extensão do PNG para animações, o APNG oferece qualidade superior ao GIF, com suporte a
+                        24-bit colors e transparência. No entanto, tem menor compatibilidade com navegadores antigos.
+                    </dd>
+                </dl>
+
+                <h2>Atributos Adicionais</h2>
+                <h3>Largura e Altura</h3>
+                <p>Você pode especificar as dimensões da imagem utilizando os parâmtros <strong>width</strong> e
+                    <strong>height</strong>:
+                </p>
+                <pre><code>&lt;img src="logo.png" alt="Logo da empresa" width="200" height="100"&gt;</code></pre>
+                <p><strong>Observação</strong>: É uma boa prática especificar width e height para evitar mudanças de
+                    layout enquanto a imagem carrega.</p>
+
+                <h3>Título da Imagem</h3>
+                <p>O atributo <stronge>title</stronge> fornece informações adicionais que aparecem como tooltip:</p>
+                <pre><code>&lt;img src="gato.jpg" alt="Gato siamês" title="Foto do meu gato de estimação"&gt;</code></pre>
+
+                <h2>Imagens como Links</h2>
+                <p>Você pode transformar uma imagem em um link colocando-a dentro de uma tag <strong>&lt;a&gt;</strong>:
+                </p>
+                <pre><code>&lt;a href="pagina2.html"&gt;
+    &lt;img src="botao.jpg" alt="Clique para ir para página 2"&gt;
+&lt;/a&gt;</code></pre>
+
+                <h2>Imagens em Diferentes Pastas</h2>
+                <h3>Imagem na mesma pasta:</h3>
+                <pre><code>&lt;img src="foto.jpg" alt="Minha foto"&gt;</code></pre>
+
+                <h3>Imagem em subpasta:</h3>
+                <pre><code>&lt;img src="assets/foto.jpg" alt="Minha foto"&gt;</code></pre>
+
+                <h3>Imagem em pasta acima:</h3>
+                <pre><code>&lt;img src="../foto.jpg" alt="Minha foto"&gt;</code></pre>
+
+                <h2>Imagens da Web</h2>
+                <p>Você pode usar imagens de outros sites <strong>(quando permitido</strong>):</p>
+                <pre><code>&lt;img src="https://www.exemplo.com/imagem.jpg" alt="Imagem de exemplo"&gt;</code></pre>
+                <h2>Boas Práticas</h2>
+                <ol>
+                    <li>Sempre use o atributo <strong>alt</strong> para acessibilidade</li>
+                    <li>Use nomes descritivos para os arquivos de imagem - aplicação semântica</li>
+                    <li>Otimize as imagens para a web (tamanho e qualidade adequados)</li>
+                    <li>Não redimensione imagens apenas com HTML (use um editor de imagens)</li>
+                    <li>Organize suas imagens em pastas</li>
+                </ol>
+                <h2>Conclusão</h2>
+                <p>As imagens são elementos essenciais no desenvolvimento web. Com a tag <strong>&lt;img&gt;</strong> e
+                    seus
+                    atributos, você pode enriquecer suas páginas com conteúdo visual.</p>
+
+
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy;2025. Professor Flávio Ricardo.</p>
+    </footer>
+</body>
+
+</html>
