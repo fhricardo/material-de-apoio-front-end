@@ -65,6 +65,12 @@ dl {
         margin-bottom: 1rem;
         border-left: 5px solid #464646;
     }
+
+    img {
+        width: 200px;
+        display: block;
+        margin-bottom: 2rem;
+    }
 }
 
 header {
