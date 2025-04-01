@@ -1,0 +1,198 @@
+# HTML - Aula 04: Tags DIV e Elementos Semânticos
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Front-end</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h2>Front-end</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="html.html">HTML</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <aside>
+            <ul>
+                <li><a href="aula-01.html">Aula 01</a></li>
+                <li><a href="aula-02.html">Aula 02</a></li>
+                <li><a href="atividade-aula-02.html">Exercício - Aula 02</a></li>
+                <li><a href="aula-03.html">Aula 03</a></li>
+                <li><a href="atividade-aula-03.html">Exercício - Aula 03</a></li>
+                <li><a href="aula-04.html">Aula 04</a></li>
+            </ul>
+        </aside>
+        <main>
+            <div class="contents">
+                <h1>HTML - Aula 04</h1>
+                <h2>Tags DIV e Elementos Semânticos</h2>
+                <hr>
+
+                <h3>Introdução</h3>
+                <p>Nesta aula, vamos explorar duas abordagens fundamentais para estruturar conteúdo em HTML: a tag
+                    <code>&lt;div&gt;</code> (genérica) e as tags semânticas introduzidas no HTML5.</p>
+
+                <h3>A Tag DIV</h3>
+                <p>A tag <code>&lt;div&gt;</code> é um container genérico que agrupa elementos para fins de estilo ou
+                    organização.</p>
+
+                <h4>Características:</h4>
+                <ul>
+                    <li>É um elemento em bloco (ocupa toda a largura disponível)</li>
+                    <li>Não tem significado semântico</li>
+                    <li>Muito utilizada antes do HTML5 para estruturar layouts</li>
+                </ul>
+
+                <h4>Exemplo Básico:</h4>
+                <pre><code>&lt;div&gt;
+    &lt;h2&gt;Título da Seção&lt;/h2&gt;
+    &lt;p&gt;Conteúdo da seção...&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+
+                <h3>Elementos Semânticos do HTML5</h3>
+                <p>Com o HTML5, foram introduzidas tags que dão significado às diferentes partes de uma página web:</p>
+
+                <dl>
+                    <dt><code>&lt;header&gt;</code></dt>
+                    <dd>Representa o cabeçalho da página ou de uma seção. Normalmente contém logotipos, menus e
+                        elementos introdutórios.</dd>
+
+                    <dt><code>&lt;nav&gt;</code></dt>
+                    <dd>Define uma seção de navegação com links para outras páginas ou partes da mesma página.</dd>
+
+                    <dt><code>&lt;main&gt;</code></dt>
+                    <dd>Especifica o conteúdo principal e único da página. Deve haver apenas um por documento.</dd>
+
+                    <dt><code>&lt;article&gt;</code></dt>
+                    <dd>Representa conteúdo independente que pode ser distribuído separadamente, como posts, notícias,
+                        etc.</dd>
+
+                    <dt><code>&lt;section&gt;</code></dt>
+                    <dd>Define uma seção genérica de conteúdo, geralmente com um título.</dd>
+
+                    <dt><code>&lt;aside&gt;</code></dt>
+                    <dd>Representa conteúdo relacionado mas não essencial, como barras laterais ou caixas de informação.
+                    </dd>
+
+                    <dt><code>&lt;footer&gt;</code></dt>
+                    <dd>Define o rodapé da página ou de uma seção. Normalmente contém informações de autoria, links e
+                        direitos.</dd>
+
+                    <dt><code>&lt;figure&gt;</code> e <code>&lt;figcaption&gt;</code></dt>
+                    <dd>Usados para agrupar imagens com suas legendas.</dd>
+                </dl>
+
+                <h3>Comparação: DIV vs Semântica</h3>
+                <table>
+                    <tr>
+                        <th>Característica</th>
+                        <th>DIV</th>
+                        <th>Elementos Semânticos</th>
+                    </tr>
+                    <tr>
+                        <td>Significado</td>
+                        <td>Nenhum</td>
+                        <td>Específico</td>
+                    </tr>
+                    <tr>
+                        <td>SEO</td>
+                        <td>Neutro</td>
+                        <td>Melhorado</td>
+                    </tr>
+                    <tr>
+                        <td>Acessibilidade</td>
+                        <td>Neutro</td>
+                        <td>Melhorada</td>
+                    </tr>
+                    <tr>
+                        <td>Leitura do código</td>
+                        <td>Menos clara</td>
+                        <td>Mais clara</td>
+                    </tr>
+                </table>
+
+                <h3>Exemplo de Estrutura Semântica</h3>
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Página Semântica&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Meu Site&lt;/h1&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#sobre"&gt;Sobre&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+    
+    &lt;main&gt;
+        &lt;article&gt;
+            &lt;h2&gt;Título do Artigo&lt;/h2&gt;
+            &lt;p&gt;Conteúdo do artigo...&lt;/p&gt;
+        &lt;/article&gt;
+        
+        &lt;aside&gt;
+            &lt;h3&gt;Leia também&lt;/h3&gt;
+            &lt;p&gt;Conteúdo relacionado...&lt;/p&gt;
+        &lt;/aside&gt;
+    &lt;/main&gt;
+    
+    &lt;footer&gt;
+        &lt;p&gt;&copy; 2025 Meu Site&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+                <h3>Quando Usar DIV</h3>
+                <p>Apesar dos elementos semânticos, a DIV ainda tem suas utilidades:</p>
+                <ul>
+                    <li>Para agrupar elementos sem significado semântico específico</li>
+                    <li>Como container para estilização CSS</li>
+                    <li>Quando nenhum elemento semântico se encaixa no propósito</li>
+                </ul>
+
+                <h3>Boas Práticas</h3>
+                <ol>
+                    <li>Prefira elementos semânticos quando possível</li>
+                    <li>Use DIVs apenas para fins de estilização ou agrupamento genérico</li>
+                    <li>Não aninhe elementos semânticos sem necessidade</li>
+                    <li>Mantenha uma hierarquia lógica</li>
+                    <li>Use ARIA roles quando necessário para melhorar acessibilidade</li>
+                </ol>
+
+                <h3>Exercício Prático</h3>
+                <p>Converta a seguinte estrutura baseada em DIVs para uma estrutura semântica:</p>
+                <pre><code>&lt;div id="cabecalho"&gt;...&lt;/div&gt;
+&lt;div id="menu"&gt;...&lt;/div&gt;
+&lt;div id="conteudo"&gt;
+    &lt;div class="post"&gt;...&lt;/div&gt;
+    &lt;div class="post"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="rodape"&gt;...&lt;/div&gt;</code></pre>
+
+                <h3>Conclusão</h3>
+                <p>Os elementos semânticos do HTML5 trazem significado à estrutura da página, melhorando acessibilidade,
+                    SEO e manutenção do código. Enquanto as DIVs continuam úteis para agrupamentos genéricos, o uso
+                    adequado da semântica é uma prática essencial no desenvolvimento web moderno.</p>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy;2025. Professor Flávio Ricardo.</p>
+    </footer>
+</body>
+
+</html>
