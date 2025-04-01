@@ -19,6 +19,14 @@ body {
 
 a {
     transition: .5s ease;
+    color: crimson;
+    text-decoration: none;
+    font-weight: 600;
+
+    &:hover {
+        color: darkred;
+        text-decoration: underline;
+    }
 }
 
 p {
@@ -71,6 +79,26 @@ dl {
         display: block;
         margin-bottom: 2rem;
     }
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding-left: 0.5rem;
+    background-color: crimson;
+    color: #fafafa;
+}
+
+h4 {
+    font-size: 1.25rem;
 }
 
 header {
@@ -173,6 +201,10 @@ header {
 
             li {
                 list-style-position: inside;
+                margin-left: 1rem;
+            }
+
+            h4 {
                 margin-left: 1rem;
             }
         }
