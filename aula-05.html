@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 05 - Introdução ao CSS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h2>Front-end</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="html.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside>
+            <ul>
+                <li><a href="aula-01.html">Aula 01</a></li>
+                <li><a href="aula-02.html">Aula 02</a></li>
+                <li><a href="atividade-aula-02.html">Exercício - Aula 02</a></li>
+                <li><a href="aula-03.html">Aula 03</a></li>
+                <li><a href="atividade-aula-03.html">Exercício - Aula 03</a></li>
+                <li><a href="aula-04.html">Aula 04</a></li>
+                <li><a href="atividade-aula-04.html">Exercício - Aula 04</a></li>
+                <li><a href="aula-05.html">Aula 05</a></li>
+            </ul>
+        </aside>
+
+        <main>
+            <div class="contents">
+                <h1>CSS - Aula 05</h1>
+                <h2>Introdução ao CSS</h2>
+
+                <h3>O que é CSS?</h3>
+                <p>
+                    CSS (Cascading Style Sheets) é a linguagem usada para estilizar páginas HTML. Com o CSS, conseguimos
+                    definir cores, fontes, espaçamentos, tamanhos, posicionamentos e até animações.
+                </p>
+
+                <h3>Por que usar CSS?</h3>
+                <ul>
+                    <li>Separar o conteúdo (HTML) da apresentação (CSS)</li>
+                    <li>Manter o código mais organizado e reutilizável</li>
+                    <li>Aplicar estilos de forma consistente em várias páginas</li>
+                    <li>Melhorar a experiência do usuário com uma interface mais bonita</li>
+                </ul>
+
+                <h3>Formas de aplicar CSS</h3>
+                <p>Existem três formas principais de aplicar CSS em um documento HTML:</p>
+
+                <dl>
+                    <dt>1. CSS Inline</dt>
+                    <dd>Estilo aplicado diretamente no elemento HTML com o atributo <code>style</code>.</dd>
+
+                    <pre><code>&lt;p style="color: blue;"&gt;Texto em azul&lt;/p&gt;</code></pre>
+
+                    <dt>2. CSS Interno</dt>
+                    <dd>Estilo inserido dentro da própria página HTML, na tag <code>&lt;style&gt;</code> no
+                        &lt;head&gt;.</dd>
+
+                    <pre><code>&lt;style&gt;
+    p {
+        color: red;
+    }
+&lt;/style&gt;
+</code></pre>
+
+                    <dt>3. CSS Externo</dt>
+                    <dd>Estilo definido em um arquivo separado (ex: <code>style.css</code>) e importado com a tag
+                        <code>&lt;link&gt;</code>.
+                    </dd>
+
+                    <pre><code>&lt;link rel="stylesheet" href="css/style.css"&gt;</code></pre>
+                </dl>
+
+                <h3>Sintaxe básica do CSS</h3>
+                <p>O CSS funciona através de seletores que "apontam" para elementos HTML, e declarações que definem os
+                    estilos.</p>
+
+                <pre><code>seletor {
+    propriedade: valor;
+}</code></pre>
+
+                <p>Exemplo:</p>
+                <pre><code>h1 {
+    color: green;
+    font-size: 32px;
+}</code></pre>
+
+                <h3>Principais Seletores</h3>
+                <ul>
+                    <li><strong>Tag</strong>: estiliza todos os elementos de uma tag (ex: <code>p</code>,
+                        <code>h1</code>)</li>
+                    <li><strong>Classe</strong>: usa <code>.</code> antes do nome e é aplicada com <code>class</code> no
+                        HTML</li>
+                    <li><strong>ID</strong>: usa <code>#</code> antes do nome e é aplicada com <code>id</code> no HTML
+                    </li>
+                </ul>
+
+                <pre><code>p {
+    color: black;
+}
+
+.meu-paragrafo {
+    font-style: italic;
+}
+
+#destaque {
+    background-color: yellow;
+}</code></pre>
+
+                <h3>Boas práticas iniciais</h3>
+                <ol>
+                    <li>Prefira CSS externo para manter organização</li>
+                    <li>Use classes para aplicar estilos em múltiplos elementos</li>
+                    <li>Evite CSS inline — dificulta a manutenção</li>
+                    <li>Comente seu código se necessário</li>
+                </ol>
+
+                <h3>Exemplo prático</h3>
+                <p>HTML:</p>
+                <pre><code>&lt;p class="aviso"&gt;Atenção: isso é importante!&lt;/p&gt;</code></pre>
+
+                <p>CSS:</p>
+                <pre><code>.aviso {
+    color: white;
+    background-color: red;
+    padding: 10px;
+}</code></pre>
+
+                <h3>Conclusão</h3>
+                <p>CSS é essencial para criar interfaces visuais atraentes e responsivas. Nesta aula vimos o básico
+                    sobre como aplicar estilos e estruturar o CSS. A partir daqui, vamos explorar mais propriedades e
+                    técnicas nos próximos encontros.</p>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy;2025. Professor Flávio Ricardo.</p>
+    </footer>
+</body>
+
+</html>
