@@ -239,6 +239,12 @@ header {
 
 }
 
+figure {
+    max-width: 600px;
+    background-color: #fff;
+    padding: 1rem;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;

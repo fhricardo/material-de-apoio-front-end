@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 05 - Introdução ao CSS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h2>Front-end</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="html.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside>
+            <ul>
+                <li><a href="aula-05.html">Aula 05</a></li>
+                <li><a href="aula-06.html">Aula 06</a></li>
+                <li><a href="atividade-aula-06.html">Atividade Aula 06</a></li>
+                <li><a href="aula-07.html">Aula 07</a></li>
+            </ul>
+        </aside>
+
+        <main>
+            <div class="contents">
+                <h1>CSS - Aula 07</h1>
+                <h2>Box Model</h2>
+
+                <h3>O que é o Box Model?</h3>
+                <p>
+                    O Box Model (ou Modelo de Caixa) é o modo como o CSS enxerga cada elemento HTML. Cada
+                    elemento é tratado como uma “caixa” que pode conter outras caixas, com propriedades que definem seu
+                    tamanho e espaçamento.
+                </p>
+
+                <h3>Partes de um Box</h3>
+                <ul>
+                    <li><strong>Content</strong>: o conteúdo em si (texto, imagem, etc.)</li>
+                    <li><strong>Padding</strong>: espaço interno entre o conteúdo e a borda</li>
+                    <li><strong>Border</strong>: contorno do elemento</li>
+                    <li><strong>Margin</strong>: espaço externo que separa o elemento de outros</li>
+                </ul>
+
+                <h3>Ilustração do Modelo de Caixa</h3>
+                <figure>
+                    <img src="assets/aula-07-box-model-01.svg" alt="">
+                </figure>
+
+                <h3>Propriedades CSS do Box Model</h3>
+
+                <h4>1. <code>width</code> e <code>height</code></h4>
+                <p>Definem a largura e altura do conteúdo (não incluem padding, border ou margin).</p>
+
+                <pre><code>div {
+          width: 100px;
+          height: 100px;
+        }</code></pre>
+
+                <h4>2. <code>padding</code></h4>
+                <p>Espaçamento interno. Afasta o conteúdo da borda.</p>
+
+                <pre><code>/* Um valor para todos os lados */
+div {
+    padding: 20px;
+}
+
+/* Dois valores: vertical | horizontal */
+div {
+    padding: 20px 30px;
+}
+
+/* Quatro valores: top | right | bottom | left */
+div {
+    padding: 20px 30px 10px 15px;
+}</code></pre>
+
+                <h4>3. <code>border</code></h4>
+                <p>Define espessura, estilo e cor da borda do elemento.</p>
+
+                <pre><code>div {
+    border: 2px solid black;
+}</code></pre>
+
+                <h4>4. <code>margin</code></h4>
+                <p>Espaço externo. Afasta o elemento dos outros.</p>
+
+                <pre><code>div {
+    margin: 20px;               /* todos os lados */
+    margin: 10px 15px;          /* vertical | horizontal */
+    margin: 10px 15px 20px 25px;/* top | right | bottom | left */
+}</code></pre>
+
+                <h3><code>box-sizing</code></h3>
+                <p>
+                    Essa propriedade muda como a largura e altura são calculadas. O padrão é
+                    <code>content-box</code>, onde padding e border são somados à largura e altura.
+                </p>
+                <p>
+                    Com <code>box-sizing: border-box</code>, o padding e a border são incluídos dentro da largura e
+                    altura definidas,
+                    facilitando o controle do layout.
+                </p>
+
+                <pre><code>div {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    border: 2px solid black;
+    box-sizing: border-box;
+}</code></pre>
+
+                <h3>Resumo Visual</h3>
+                <ul>
+                    <li><strong>content-box</strong>: largura + padding + border = tamanho final</li>
+                    <li><strong>border-box</strong>: largura = tamanho final (o padding e a borda se ajustam dentro)
+                    </li>
+                </ul>
+                <p>Clique <a href="downloads/box-model-guia-rapido.pdf" target="_blank">aqui</a> para fazer o download
+                    do Guia Rápido de
+                    Box Model.</p>
+
+                <h3>Boas práticas</h3>
+                <ol>
+                    <li>Use <code>box-sizing: border-box</code> como padrão do projeto.</li>
+                    <li>Sempre revise o impacto de padding e border no layout.</li>
+                    <li>Evite margens exageradas que podem causar sobreposições indesejadas.</li>
+                </ol>
+
+                <h3>Conclusão</h3>
+                <p>
+                    Entender o Box Model é essencial para todo desenvolvedor front-end. Ele afeta diretamente como
+                    os elementos se comportam no layout, e dominar isso te dá mais controle na hora de construir páginas
+                    bem alinhadas e responsivas.
+                </p>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy;2025. Professor Flávio Ricardo.</p>
+    </footer>
+</body>
+
+</html>
