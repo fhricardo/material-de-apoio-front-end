@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 05 - Introdução ao CSS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h2>Front-end</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="html.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside>
+            <ul>
+                <li><a href="aula-05.html">Aula 05</a></li>
+                <li><a href="aula-06.html">Aula 06</a></li>
+            </ul>
+        </aside>
+
+        <main>
+            <div class="contents">
+                <h1>CSS - Aula 06</h1>
+                <h2>Propriedades CSS</h2>
+
+                <h3>Introdução</h3>
+                <p>Agora que já sabemos aplicar CSS em uma página HTML, nesta aula vamos conhecer as propriedades mais
+                    usadas para estilização visual de elementos. Vamos entender como modificar cores, fontes, tamanhos,
+                    bordas e espaços internos e externos.</p>
+
+                <h3>Cores</h3>
+                <p>As cores são controladas principalmente pelas propriedades:</p>
+                <ul>
+                    <li><code>color</code>: Define a cor do texto.</li>
+                    <li><code>background-color</code>: Define a cor de fundo do elemento.</li>
+                </ul>
+
+                <pre><code>p {
+        color: #333;
+        background-color: #f2f2f2;
+      }</code></pre>
+
+                <h3>Fontes</h3>
+                <p>As principais propriedades para trabalhar com fontes são:</p>
+                <ul>
+                    <li><code>font-family</code>: Define a família tipográfica (Arial, Verdana, etc.).</li>
+                    <li><code>font-size</code>: Define o tamanho da fonte.</li>
+                    <li><code>font-weight</code>: Define o peso (negrito ou não).</li>
+                    <li><code>font-style</code>: Define o estilo (normal, itálico).</li>
+                </ul>
+
+                <pre><code>h1 {
+        font-family: 'Arial', sans-serif;
+        font-size: 32px;
+        font-weight: bold;
+        font-style: italic;
+      }</code></pre>
+
+                <h3>Espaçamento</h3>
+                <p>Espaços internos e externos são controlados com:</p>
+                <ul>
+                    <li><code>padding</code>: Espaço interno (entre o conteúdo e a borda).</li>
+                    <li><code>margin</code>: Espaço externo (entre o elemento e outros elementos).</li>
+                </ul>
+
+                <pre><code>div {
+        padding: 20px;
+        margin: 10px;
+      }</code></pre>
+
+                <h3>Bordas</h3>
+                <p>As bordas podem ser configuradas com:</p>
+                <ul>
+                    <li><code>border</code>: Define a borda completa (largura, estilo e cor).</li>
+                    <li><code>border-radius</code>: Arredonda os cantos da borda.</li>
+                </ul>
+
+                <pre><code>section {
+        border: 2px solid #ccc;
+        border-radius: 10px;
+      }</code></pre>
+
+                <h3>Alinhamento e texto</h3>
+                <p>Algumas propriedades úteis para estilização de textos:</p>
+                <ul>
+                    <li><code>text-align</code>: Alinha o texto (left, center, right, justify).</li>
+                    <li><code>line-height</code>: Define o espaçamento entre linhas.</li>
+                    <li><code>text-transform</code>: Transforma o texto (uppercase, lowercase, capitalize).</li>
+                </ul>
+
+                <pre><code>p {
+        text-align: justify;
+        line-height: 1.5;
+        text-transform: capitalize;
+      }</code></pre>
+
+                <h3>Boas práticas</h3>
+                <ol>
+                    <li>Use unidades relativas como <code>em</code> e <code>rem</code> sempre que possível.</li>
+                    <li>Organize o CSS por seções ou por tipo de elemento.</li>
+                    <li>Evite estilos inline, prefira CSS externo.</li>
+                </ol>
+
+                <h3>Conclusão</h3>
+                <p>Essas propriedades são o alicerce da estilização no CSS. Dominar bem cores, fontes, espaçamentos e
+                    bordas é essencial para criar interfaces mais bonitas, organizadas e profissionais. Na próxima aula,
+                    vamos começar a explorar **posicionamento e layout** com CSS.</p>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy;2025. Professor Flávio Ricardo.</p>
+    </footer>
+</body>
+
+</html>
