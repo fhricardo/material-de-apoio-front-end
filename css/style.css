@@ -298,6 +298,7 @@ footer {
         align-items: center;
         font-size: 1.5rem;
         color: #ececec;
+        border-radius: 1rem;
 
         .color-name {
             font-size: 1.5rem;
