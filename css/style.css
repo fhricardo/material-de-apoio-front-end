@@ -282,3 +282,34 @@ footer {
         padding: 0 1rem;
     }
 }
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    .color-box {
+        width: 20rem;
+        height: 8rem;
+        background-color: #000000;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        color: #ececec;
+
+        .color-name {
+            font-size: 1.5rem;
+            color: #ececec;
+            mix-blend-mode: difference;
+        }
+
+        .color-code {
+            font-size: 1rem;
+            color: #ececec;
+            mix-blend-mode: difference;
+            font-family: monospace;
+        }
+    }
+}
