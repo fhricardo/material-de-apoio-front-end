@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Imagens em HTML</title>
+        <style>
+            body {
+                width: 100%;
+                display: flex;
+                justify-content: start;
+                gap: 2rem;
+                flex-wrap: wrap;
+            }
+            div {
+                width: 200px;
+                img {
+                    width: 100%;
+                }
+            }
+            .bg {
+                background-color: rgb(255, 255, 133);
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <img src="assets/images-jpg.jpg" alt="Ilustração de um computador" title="Ilustração de um computador" />
+            <p>Imagem no Formato JPEG/JPG</p>
+        </div>
+        <div>
+            <img src="assets/images-png-st.png" alt="PNG sem transparência" />
+            <p>Imagem em PNG sem transparência</p>
+        </div>
+        <div class="bg">
+            <img src="assets/images-png-t.png" alt="PNG com transparência" />
+            <p>Imagem em PNG com transparência</p>
+        </div>
+        <div>
+            <img src="assets/images-gif-st.gif" alt="GIF sem transparência" />
+            <p>Imagem em GIF sem transparência</p>
+        </div>
+        <div class="bg">
+            <img src="assets/images-gif-t.gif" alt="GIF com transparência" />
+            <p>Imagem em GIF com transparência</p>
+        </div>
+        <div>
+            <img src="assets/images-gif-an.gif" alt="GIF Animado" />
+            <p>Imagem em GIF Animado</p>
+        </div>
+        <div>
+            <img src="assets/images-svg-st.svg" alt="SVG padrão" />
+            <p>Imagem em SVG</p>
+        </div>
+        <div class="bg">
+            <img src="assets/images-svg-t.svg" alt="SVG com transparência" />
+            <p>Imagem em SVG com transparência</p>
+        </div>
+        <div>
+            <img src="assets/images-webp-st.webp" alt="WebP padrão" />
+            <p>Imagem em WebP</p>
+        </div>
+        <div class="bg">
+            <img src="assets/images-webp-t.webp" alt="WebP com transparência" />
+            <p>Imagem em WebP com transparência</p>
+        </div>
+        <div>
+            <img src="assets/crow.webp" alt="WebP com animação" />
+            <p>Imagem em WebP com animação</p>
+        </div>
+        <div>
+            <img src="assets/images-avif-st.avif" alt="AVIF" />
+            <p>Imagem em AVIF</p>
+        </div>
+    </body>
+</html>

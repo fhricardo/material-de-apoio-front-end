@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 05 - Introdução ao CSS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="contents">
+        <h1>CSS - Aula 09</h1>
+        <h2>Posicionamento com CSS</h2>
+
+        <h3>Introdução</h3>
+        <p>
+            A propriedade <code>position</code> permite definir como um elemento se posiciona dentro da página
+            ou em
+            relação a outros elementos. Isso é essencial para criar cabeçalhos fixos, pop-ups, menus flutuantes
+            e
+            muito mais.
+        </p>
+
+        <h3>Valores da propriedade <code>position</code></h3>
+
+        <h4><code>static</code> (padrão)</h4>
+        <p>É o valor padrão. O elemento segue o fluxo normal do documento.</p>
+
+        <pre><code>div {
+          position: static;
+        }</code></pre>
+
+        <h4><code>relative</code></h4>
+        <p>
+            O elemento permanece no fluxo normal, mas pode ser deslocado com <code>top</code>,
+            <code>left</code>,
+            <code>right</code> e <code>bottom</code>.
+        </p>
+
+        <pre><code>div {
+          position: relative;
+          top: 10px;
+          left: 20px;
+        }</code></pre>
+
+        <h4><code>absolute</code></h4>
+        <p>
+            O elemento é removido do fluxo normal e posicionado em relação ao elemento pai mais próximo com
+            <code>position: relative</code> (ou ao <code>&lt;body&gt;</code> se nenhum pai for posicionado).
+        </p>
+
+        <pre><code>.pai {
+          position: relative;
+        }
+        
+        .filho {
+          position: absolute;
+          top: 0;
+          right: 0;
+        }</code></pre>
+
+        <h4><code>fixed</code></h4>
+        <p>
+            O elemento é fixado na tela, independente do scroll. Muito usado em cabeçalhos, botões "voltar ao
+            topo", etc.
+        </p>
+
+        <pre><code>.topo {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+        }</code></pre>
+
+        <h4><code>sticky</code></h4>
+        <p>
+            O elemento age como <code>relative</code> até um certo ponto e então se fixa como
+            <code>fixed</code>. Ótimo
+            para menus ou cabeçalhos que grudam ao rolar a página.
+        </p>
+
+        <pre><code>nav {
+          position: sticky;
+          top: 0;
+        }</code></pre>
+
+        <h3><code>z-index</code></h3>
+        <p>Controla a sobreposição dos elementos. Quanto maior o número, mais acima o elemento aparece.</p>
+
+        <pre><code>.caixa1 {
+          position: absolute;
+          z-index: 1;
+        }
+        
+        .caixa2 {
+          position: absolute;
+          z-index: 2;
+        }</code></pre>
+
+        <h3>Resumo dos efeitos</h3>
+        <table>
+            <tr>
+                <th>Valor</th>
+                <th>Remove do fluxo?</th>
+                <th>Segue scroll?</th>
+                <th>Usa top/left?</th>
+            </tr>
+            <tr>
+                <td>static</td>
+                <td>Não</td>
+                <td>Sim</td>
+                <td>Não</td>
+            </tr>
+            <tr>
+                <td>relative</td>
+                <td>Não</td>
+                <td>Sim</td>
+                <td>Sim</td>
+            </tr>
+            <tr>
+                <td>absolute</td>
+                <td>Sim</td>
+                <td>Sim</td>
+                <td>Sim</td>
+            </tr>
+            <tr>
+                <td>fixed</td>
+                <td>Sim</td>
+                <td>Não</td>
+                <td>Sim</td>
+            </tr>
+            <tr>
+                <td>sticky</td>
+                <td>Não</td>
+                <td>Parcial</td>
+                <td>Sim</td>
+            </tr>
+        </table>
+
+        <h3>Boas práticas</h3>
+        <ol>
+            <li>Evite usar <code>absolute</code> em excesso — dificulta a responsividade.</li>
+            <li>Use <code>relative</code> para servir de referência a elementos <code>absolute</code>.</li>
+            <li><code>sticky</code> funciona bem com scrolls longos, mas depende do contexto do layout.</li>
+        </ol>
+
+        <h3>Conclusão</h3>
+        <p>
+            Com a propriedade <code>position</code>, conseguimos controlar onde e como os elementos se
+            posicionam
+            na tela. Agora estamos prontos para trabalhar com sistemas de layout mais modernos e flexíveis. E aí
+            vem
+            ele: o poderoso <strong>Flexbox</strong>, que vamos explorar na próxima aula!
+        </p>
+    </div>
+
+</body>
+
+</html>

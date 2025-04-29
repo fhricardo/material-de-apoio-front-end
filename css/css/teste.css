@@ -12,11 +12,6 @@
     --width: 77rem;
 }
 
-html {
-    scroll-behavior: smooth;
-    line-height: 1.875;
-}
-
 body {
     background-color: #1C2128;
     color: #ececec;
@@ -212,11 +207,9 @@ header {
         padding: 1rem;
 
         .contents {
-            width: 100%;
             display: flex;
             flex-direction: column;
             gap: 1rem;
-            padding-right: 3rem;
 
             ol {
                 h3 {
@@ -244,11 +237,6 @@ header {
         }
     }
 
-}
-
-iframe {
-    width: 100%;
-    height: calc(100vh - 11rem);
 }
 
 figure {
@@ -301,7 +289,7 @@ footer {
     gap: 1rem;
 
     .color-box {
-        width: 14rem;
+        width: 20rem;
         height: 8rem;
         background-color: #000000;
         display: flex;
@@ -325,19 +313,4 @@ footer {
             font-family: monospace;
         }
     }
-}
-
-::-webkit-scrollbar {
-    width: 1rem;
-}
-
-::-webkit-scrollbar-track {
-    background-color: none;
-    border-left: 1px solid var(--mid-gray);
-    width: .5rem
-}
-
-::-webkit-scrollbar-thumb {
-    background: lightblue;
-    border-radius: .5rem;
 }

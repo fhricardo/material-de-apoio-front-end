@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 05 - Introdução ao CSS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="contents">
+        <h1>CSS - Aula 08</h1>
+        <h2>Display, Visibility e Overflow</h2>
+
+        <h3>Introdução</h3>
+        <p>Nesta aula, vamos conhecer algumas propriedades fundamentais para o controle visual dos elementos na
+            tela: <strong>display</strong>, <strong>visibility</strong> e <strong>overflow</strong>. Essas
+            propriedades afetam diretamente como os elementos aparecem e se comportam dentro do layout.</p>
+
+        <h3>1. Propriedade <code>display</code></h3>
+        <p>Controla como um elemento é exibido na tela. Os valores mais comuns são:</p>
+        <ul>
+            <li><code>block</code>: Ocupa toda a linha. Ex: &lt;div&gt;, &lt;section&gt;</li>
+            <li><code>inline</code>: Fica na mesma linha. Ex: &lt;span&gt;, &lt;a&gt;</li>
+            <li><code>inline-block</code>: Mistura dos dois: respeita largura/altura, mas fica na mesma linha
+            </li>
+            <li><code>none</code>: Oculta completamente o elemento (não ocupa espaço)</li>
+        </ul>
+
+        <pre><code>p {
+          display: inline;
+        }
+        
+        span {
+          display: block;
+        }
+        
+        div.oculto {
+          display: none;
+        }</code></pre>
+
+        <h3>2. Propriedade <code>visibility</code></h3>
+        <p>Define se o elemento está visível ou não, mas diferente do <code>display: none</code>, ele
+            <strong>ainda ocupa espaço</strong>.
+        </p>
+
+        <ul>
+            <li><code>visible</code>: o padrão, elemento visível</li>
+            <li><code>hidden</code>: o elemento fica invisível, mas continua ocupando espaço no layout</li>
+        </ul>
+
+        <pre><code>h1 {
+          visibility: hidden;
+        }</code></pre>
+
+        <h3>3. Propriedade <code>overflow</code></h3>
+        <p>Controla o que acontece quando o conteúdo ultrapassa o tamanho do container.</p>
+
+        <ul>
+            <li><code>visible</code>: mostra tudo, mesmo fora do container (padrão)</li>
+            <li><code>hidden</code>: corta o conteúdo que ultrapassar</li>
+            <li><code>scroll</code>: adiciona rolagem sempre</li>
+            <li><code>auto</code>: adiciona rolagem só se necessário</li>
+        </ul>
+
+        <pre><code>.caixa {
+          width: 200px;
+          height: 100px;
+          overflow: auto;
+        }</code></pre>
+
+        <h3>Comparando <code>display: none</code> vs <code>visibility: hidden</code></h3>
+        <table>
+            <tr>
+                <th>Propriedade</th>
+                <th>Elemento é visível?</th>
+                <th>Ocupa espaço?</th>
+            </tr>
+            <tr>
+                <td><code>display: none</code></td>
+                <td>Não</td>
+                <td>Não</td>
+            </tr>
+            <tr>
+                <td><code>visibility: hidden</code></td>
+                <td>Não</td>
+                <td>Sim</td>
+            </tr>
+        </table>
+
+        <h3>Boas práticas</h3>
+        <ol>
+            <li>Use <code>display: none</code> quando quiser remover totalmente um elemento.</li>
+            <li>Use <code>visibility: hidden</code> se precisar manter o layout intacto.</li>
+            <li>Use <code>overflow: auto</code> para garantir que conteúdo não ultrapasse áreas fixas.</li>
+        </ol>
+
+        <h3>Conclusão</h3>
+        <p>Essas propriedades são essenciais para ter controle visual dos elementos. Entender como cada uma
+            delas afeta o layout te ajuda a construir páginas organizadas, com elementos bem comportados na
+            tela. A próxima etapa será mergulhar no <strong>Flexbox</strong>, que vai abrir um mundo de
+            possibilidades para organizar esses elementos com flexibilidade e responsividade.</p>
+    </div>
+
+</body>
+
+</html>

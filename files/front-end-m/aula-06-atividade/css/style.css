@@ -1,0 +1,65 @@
+html {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1,
+h2,
+h3 {
+    font-family: sans-serif;
+    font-weight: 300;
+    color: navy;
+}
+body {
+    background-color: #fafafa;
+}
+header {
+    background-color: #5f9ea0;
+    padding: 1rem;
+    border-left: 10px solid navy;
+}
+nav {
+    border: 1px solid navy;
+    border-radius: 8px;
+    background-color: ghostwhite;
+    padding: 1rem;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: navy;
+}
+main {
+    background-color: #5f9ea0;
+    padding: 1rem;
+    border: 1px solid navy;
+    border-radius: 1rem;
+    margin: 16px 0px;
+}
+section,
+article,
+aside {
+    border: 1px solid navy;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: ghostwhite;
+}
+article {
+    margin: 16px 0;
+}
+aside p {
+    font-style: italic;
+}
+footer {
+    background-color: #5f9ea0;
+    padding: 1rem;
+    border: 1px solid navy;
+    border-radius: 1rem;
+}
+footer p {
+    text-align: center;
+}
+.vermelho {
+    color: red;
+}

@@ -1,0 +1,63 @@
+/*
+seletor{
+    propriedade: valor;
+}
+*/
+body {
+    background-color: lightblue;
+    font-family: sans-serif;
+}
+header{
+    color: red;
+}
+header a{
+    color: red;
+}
+header nav a{
+    color: green;
+}
+header{
+    color: red;
+    nav{
+        color: blue;
+        a{
+            color: green;
+        }
+    }
+}
+.textoVerde {
+    color: darkgreen;
+}
+h1 {
+    color: red;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h2{
+    color: blue;
+}
+#meuID {
+    color: blue;
+}
+html{
+    scroll-behavior: smooth;
+}
+.secA{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #ececec;
+    color: green;
+    h2{
+        color: red;
+    }
+}
+/*
+tag{} - seletores mais genéricos
+--> Precisam ser nomes de tags do HTML
+
+.classe{} - seletor menos genérico e com mais controle
+--> Pode-se utilizar qualquer nome, desde que se respeite a caixa (Maiúscula/Minúscula) e deve ser precedido por .
+
+#identificador{} - seletor mais específico
+--> Pode-se utilizar qualquer nome, desde que se respeite a caixa (Maiúscula/Minúscula) e deve ser precedido por #
+--> DEVEM SER ÚNICOS!

@@ -94,6 +94,7 @@ header {
         }
     }
 
+
     main {
         width: calc(100% - 12rem);
         padding: 1rem;
@@ -105,6 +106,11 @@ header {
         }
     }
 
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
 }
 
 footer {

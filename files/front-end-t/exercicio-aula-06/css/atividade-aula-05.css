@@ -1,0 +1,61 @@
+html {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+body {
+    background-color: rgb(119, 136, 153);
+    padding: 0 2rem;
+}
+header {
+    background-color: navy;
+}
+header h1 {
+    text-align: center;
+    color: #fafafa;
+}
+header nav {
+    text-align: center;
+}
+header nav ul li {
+    list-style-type: none;
+}
+
+main {
+    border: 2px solid navy;
+    border-radius: 16px;
+    padding: 16px;
+}
+section {
+    border: 2px solid navy;
+    padding: 8px;
+    margin: 0px 0px 16px 0px;
+    background-color: #fafafa;
+}
+article {
+    border: 2px solid navy;
+    padding: 8px;
+    margin: 0px 0px 16px 0px;
+    background-color: #fafafa;
+}
+h2,
+h3 {
+    color: navy;
+}
+aside {
+    border: 2px solid navy;
+    background-color: lightblue;
+    padding: 8px;
+}
+footer {
+    background-color: navy;
+    padding: 8px;
+    margin: 16px 0px;
+    border-radius: 16px;
+}
+footer p {
+    text-align: center;
+    color: #fafafa;
+}
+a {
+    color: goldenrod;
+    text-decoration: none;
+}
