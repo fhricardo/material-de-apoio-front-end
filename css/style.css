@@ -329,15 +329,15 @@ footer {
 
 ::-webkit-scrollbar {
     width: 1rem;
+
 }
 
 ::-webkit-scrollbar-track {
     background-color: none;
-    border-left: 1px solid var(--mid-gray);
-    width: .5rem
 }
 
 ::-webkit-scrollbar-thumb {
-    background: lightblue;
+    background: dodgerblue;
     border-radius: .5rem;
+    cursor: ns-resize;
 }
