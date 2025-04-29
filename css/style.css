@@ -252,9 +252,14 @@ iframe {
 }
 
 figure {
-    max-width: 600px;
+    width: 100%;
     background-color: #fff;
     padding: 1rem;
+
+    img {
+        width: 100%;
+        display: block;
+    }
 }
 
 table {
