@@ -12,51 +12,84 @@
             box-sizing: border-box;
         }
 
-        .caixa {
-            width: 400px;
-            height: 100px;
-            background-color: lightblue;
-            font-size: 0;
+        body {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        .item1 {
-            width: 100px;
-            height: 100px;
-            background-color: red;
-            display: inline-block;
-            visibility: collapse;
+        main {
+            width: 500px;
+            height: 500px;
+            position: relative;
+            background-color: lightpink;
+            border-radius: 16px;
+            padding: 25px 0;
         }
 
-        .item2 {
+        div {
             width: 100px;
             height: 100px;
-            background-color: blue;
-            display: inline-block;
+            position: absolute;
+            border-radius: 50%;
+            left: 0;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
 
-        .item3 {
-            width: 100px;
-            height: 100px;
-            background-color: yellow;
-            display: inline-block;
+        .foto1 {
+            top: 30px;
+            translate: -50%;
         }
 
-        .item4 {
-            width: 100px;
-            height: 100px;
-            background-color: green;
-            display: inline-block;
+        .foto2 {
+            top: 140px;
+            translate: -50%;
+        }
+
+        .foto3 {
+            top: 250px;
+            translate: -50%;
+        }
+
+        .foto4 {
+            top: 360px;
+            translate: -50%;
+        }
+
+        h2 {
+            padding: 0 0 0 70px;
+            line-height: 110px;
         }
     </style>
 </head>
 
 <body>
-    <div class="caixa">
-        <div class="item1"></div>
-        <div class="item2"></div>
-        <div class="item3"></div>
-        <div class="item4"></div>
-    </div>
+    <main>
+        <div class="foto1">
+            <img src="assets/aula-09/aline.jpg" alt="">
+        </div>
+        <h2>Aline Silva</h2>
+        <div class="foto2">
+            <img src="assets/aula-09/bruno.jpg" alt="">
+        </div>
+        <h2>Bruno Nascimento</h2>
+        <div class="foto3">
+            <img src="assets/aula-09/gabriela.jpg" alt="">
+        </div>
+        <h2>Gabriela Santos</h2>
+        <div class="foto4">
+            <img src="assets/aula-09/heitor.jpg" alt="">
+        </div>
+        <h2>Heitor Pereira</h2>
+    </main>
 
 </body>
 
