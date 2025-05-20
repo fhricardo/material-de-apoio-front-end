@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 10 - Flexbox</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="contents">
+        <h1>CSS - Aula 10</h1>
+        <h2>Flexbox Layout - Introdução</h2>
+
+        <p>O <strong>Módulo Flexbox Layout</strong> (ou <em>Flexible Box</em>), que se tornou uma <em>Candidate
+                Recommendation</em> da W3C em outubro de 2017, foi criado para oferecer uma maneira <strong>mais
+                eficiente</strong> de organizar, alinhar e distribuir espaço entre os itens de um container — mesmo
+            quando seus tamanhos são desconhecidos ou dinâmicos (daí o termo <em>"flex"</em>, ou flexível).</p>
+
+        <h3>Princípio Básico</h3>
+
+        <p>A ideia principal do <strong>Flexbox</strong> é permitir que o container <strong>altere a largura, altura e
+                ordem</strong> dos seus itens para melhor preencher o espaço disponível. Isso é especialmente útil para
+            se adaptar a diferentes tipos de telas e dispositivos.</p>
+
+        <ul>
+            <li>Se houver espaço livre, os itens <strong>se expandem</strong> para ocupá-lo.</li>
+            <li>Se o espaço for insuficiente, os itens <strong>se encolhem</strong> para evitar vazamentos
+                (<em>overflow</em>).</li>
+        </ul>
+
+        <h3>Flexbox vs. Layouts Tradicionais</h3>
+
+        <p>Diferente dos modelos tradicionais — como o <strong>block</strong> (baseado em disposição vertical) e o
+            <strong>inline</strong> (baseado em disposição horizontal) —, o Flexbox <strong>não depende de direção
+                fixa</strong>. Isso o torna ideal para:
+        </p>
+
+        <ul>
+            <li>Ajustes em <strong>orientações diferentes</strong> (como rotação de tela).</li>
+            <li>Redimensionamento dinâmico (<em>stretching</em> e <em>shrinking</em>).</li>
+            <li>Aplicações complexas onde os layouts comuns não são suficientes.</li>
+        </ul>
+
+        <h3>Quando Usar?</h3>
+
+        <p>O Flexbox é <strong>mais indicado</strong> para:</p>
+
+        <ul>
+            <li>Componentes de aplicações.</li>
+            <li>Pequenos e médios layouts.</li>
+        </ul>
+
+        <p>Para <strong>layouts em grande escala</strong>, recomenda-se o uso do <strong>CSS Grid Layout</strong>, que
+            oferece um controle mais robusto sobre estruturas complexas.</p>
+
+        <h2>Conceitos Básicos e Terminologia</h2>
+
+        <p>Como o flexbox é um módulo completo e não uma única propriedade, ele envolve diversos conceitos e um conjunto
+            específico de propriedades. Algumas dessas propriedades são aplicadas ao container (elemento pai, chamado de
+            "flex container"), enquanto outras são aplicadas aos filhos (chamados de "flex items").</p>
+        <figure>
+            <img src="assets/css-flexbox-01.png" alt="">
+        </figure>
+
+        <h3>Diferença entre Layout Tradicional e Flexbox</h3>
+
+        <p>Enquanto o layout tradicional é baseado nas direções de fluxo block e inline, o layout flex é baseado em
+            "flex-flow directions". Observe esta representação da especificação, que explica a ideia principal por trás
+            do layout flex:</p>
+
+        <p>Os itens são dispostos seguindo o eixo principal (de main-start até main-end) ou o eixo transversal (de
+            cross-start até cross-end).</p>
+
+        <h3>Terminologia do Flexbox</h3>
+
+        <h4>Eixo Principal (Main Axis)</h4>
+        <p>O eixo principal de um flex container é o eixo primário ao longo do qual os flex items são dispostos.
+            Atenção: ele não é necessariamente horizontal; isso depende da propriedade <code>flex-direction</code> (ver
+            abaixo).</p>
+
+        <ul>
+            <li><strong>main-start | main-end</strong> - Os flex items são posicionados dentro do container a partir de
+                main-start em direção a main-end.</li>
+            <li><strong>main size</strong> - A largura ou altura de um flex item (dependendo da dimensão principal) é
+                chamada de main size. A propriedade de main size será 'width' ou 'height', conforme a dimensão
+                principal.</li>
+        </ul>
+
+        <h4>Eixo Transversal (Cross Axis)</h4>
+        <p>O eixo perpendicular ao eixo principal é chamado de eixo transversal. Sua direção depende da direção do eixo
+            principal.</p>
+
+        <ul>
+            <li><strong>cross-start | cross-end</strong> - As linhas flex são preenchidas com itens e posicionadas no
+                container a partir de cross-start em direção a cross-end.</li>
+            <li><strong>cross size</strong> - A largura ou altura de um flex item (dependendo da dimensão transversal) é
+                chamada de cross size. A propriedade de cross size será 'width' ou 'height', conforme a dimensão
+                transversal.</li>
+        </ul>
+</body>
+
+</html>
